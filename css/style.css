@@ -85,6 +85,16 @@ body {
   letter-spacing: 2px;
   font-size: 4rem;
 }
+/*.heading::before,
+.heading::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #999;
+}*/
+/*セルフコーディング*/
 .heading::before,
 .heading::after {
   content: '';
