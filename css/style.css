@@ -92,17 +92,11 @@ body {
   width: 10px;
   height: 10px;
   display: inline-block;
-  border: 1px solid #fff;
-  vertical-align: middle;
+  border: 1px solid;
+  /*vertical-align: middle;*/
+  vertical-align: -6px;
   transform: rotate(45deg);
-  margin: 10px 15px 15px;
-}
-/*セルフコーディング*/
-.about .heading::before,
-.about .heading.heading::after,
-.skills .heading::before,
-.skills .heading.heading::after {
-  border: 1px solid #333;
+  margin: 15px 15px 15px;
 }
 
 /*.heading::before,
@@ -138,6 +132,7 @@ body {
 .work-box {
   position: relative;
   display: table-cell;
+  overflow: hidden;
 }
 .work-box::after {
   content: '';
@@ -168,6 +163,12 @@ body {
   display: block;
   width: 100%;
   margin: 0 0 60%;
+}
+
+.work-image:hover {
+  transform-origin: bottom center;
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
 }
 
 .work-description {
@@ -205,6 +206,7 @@ body {
 
 .work-box:nth-child(odd) .work-image {
   margin: 60% 0 0;
+  transform-origin: top center;
 }
 .work-box:nth-child(odd) .work-description,
 .work-box:nth-child(odd)::after {
@@ -392,7 +394,8 @@ body {
   .heading::after {
     width: 8px;
     height: 8px;
-    margin: 9px 13px 13px;
+    margin: 0 12px;
+    vertical-align: 5px;
   }
 
 }
