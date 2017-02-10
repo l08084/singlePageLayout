@@ -85,6 +85,26 @@ body {
   letter-spacing: 2px;
   font-size: 4rem;
 }
+/*セルフコーディング*/
+.heading::before,
+.heading::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border: 1px solid #fff;
+  vertical-align: middle;
+  transform: rotate(45deg);
+  margin: 10px 15px 15px;
+}
+/*セルフコーディング*/
+.about .heading::before,
+.about .heading.heading::after,
+.skills .heading::before,
+.skills .heading.heading::after {
+  border: 1px solid #333;
+}
+
 /*.heading::before,
 .heading::after {
   content: '';
@@ -94,21 +114,6 @@ body {
   left: 0;
   border-bottom: 1px solid #999;
 }*/
-/*セルフコーディング*/
-.heading::before,
-.heading::after {
-  content: '';
-  /*position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;*/
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  border: 1px solid #fff;
-  vertical-align: middle;
-  transform: rotate(45deg);
-}
 
 /*.heading::before {
   bottom: 5px;
@@ -380,6 +385,14 @@ body {
   }
   .contact {
     padding-bottom: 80px;
+  }
+
+  /*セルフコーディング*/
+  .heading::before,
+  .heading::after {
+    width: 8px;
+    height: 8px;
+    margin: 9px 13px 13px;
   }
 
 }
